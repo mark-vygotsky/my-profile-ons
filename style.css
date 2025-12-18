@@ -231,7 +231,7 @@ body {
 
     /* Text size adjusted */
     .card p,
-    .card li {
-        font-size: 14px;
+    .card li {font-size: 14px;
     }
 }
+
