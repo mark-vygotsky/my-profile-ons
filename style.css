@@ -169,3 +169,69 @@ body {
 .contact-card {
     background: #efeaff;
 }
+/* =========================
+   RESPONSIVE – MOBILE VIEW
+   ========================= */
+
+@media (max-width: 900px) {
+
+    /* Container spacing */
+    body {
+        padding: 20px 10px;
+    }
+
+    /* HEADER becomes vertical */
+    .compact-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    /* Image centered and slightly smaller */
+    .compact-header img {
+        width: 150px;
+        height: 150px;
+        transform: none;
+    }
+
+    /* Disable X hover movement on mobile */
+    .compact-header img:hover {
+        transform: none;
+    }
+
+    /* Header text centered */
+    .header-text {
+        text-align: center;
+    }
+
+    /* Header text hover softer */
+    .header:hover .header-text {
+        transform: translateY(-4px);
+    }
+
+    /* Social icons centered */
+    .social-links {
+        justify-content: center;
+    }
+
+    /* Skills grid becomes single column */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cards padding reduced */
+    .card {
+        padding: 22px;
+    }
+
+    /* Titles slightly smaller */
+    .card h2 {
+        font-size: 18px;
+    }
+
+    /* Text size adjusted */
+    .card p,
+    .card li {
+        font-size: 14px;
+    }
+}
